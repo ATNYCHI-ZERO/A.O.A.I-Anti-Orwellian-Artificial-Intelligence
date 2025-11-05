@@ -1,0 +1,29 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/Makefile b/Makefile
+new file mode 100644
+index 0000000000000000000000000000000000000000..db2882c6f9db073bbc72ee4a14c43f97b161a823
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,19 @@
++.PHONY: test lint fmt bootstrap security-scan
++
++bootstrap:
++python -m venv .venv
++. .venv/bin/activate && pip install -e .[cli] pytest ruff
++
++test:
++pytest
++
++lint:
++ruff check src tests
++
++fmt:
++ruff check --select I --fix src tests
++ruff format src tests
++
++security-scan:
++pip install pip-audit
++pip-audit
+ 
+EOF
+)
