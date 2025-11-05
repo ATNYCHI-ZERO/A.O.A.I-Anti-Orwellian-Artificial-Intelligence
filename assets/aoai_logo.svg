@@ -1,0 +1,24 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/assets/aoai_logo.svg b/assets/aoai_logo.svg
+new file mode 100644
+index 0000000000000000000000000000000000000000..7bdc62b6fcc487b15e46ab81dcbd08d17c159754
+--- /dev/null
++++ b/assets/aoai_logo.svg
+@@ -0,0 +1,14 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
++  <defs>
++    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
++      <stop offset="0%" stop-color="#0FB5BA"/>
++      <stop offset="100%" stop-color="#3C4F76"/>
++    </linearGradient>
++  </defs>
++  <rect width="200" height="60" fill="#050B2C" rx="8"/>
++  <g transform="translate(20,12)">
++    <path d="M20 0 L0 8 V22 C0 32 8 42 20 48 C32 42 40 32 40 22 V8 Z" fill="url(#shieldGradient)"/>
++    <text x="80" y="28" fill="#F5F7FA" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="28">A.O.A.I</text>
++    <text x="80" y="44" fill="#0FB5BA" font-family="'Inter', sans-serif" font-size="12" letter-spacing="4">SOVEREIGN AI DEFENSE</text>
++  </g>
++</svg>
+ 
+EOF
+)
