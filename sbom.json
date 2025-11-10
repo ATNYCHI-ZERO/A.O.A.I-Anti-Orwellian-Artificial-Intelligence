@@ -1,0 +1,13 @@
+{
+  "name": "aoai-defender",
+  "version": "1.0.0-rc1",
+  "components": [
+    { "name": "psutil", "version": "5.9.x" },
+    { "name": "typer", "version": "0.9.x" },
+    { "name": "rich", "version": "13.x" },
+    { "name": "opencv-python", "version": "4.8.x" },
+    { "name": "pydantic", "version": "2.5.x" },
+    { "name": "numpy", "version": "1.26.x" },
+    { "name": "pyyaml", "version": "6.0.x" }
+  ]
+}

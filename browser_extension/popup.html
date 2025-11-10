@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A.O.A.I Guardian</title>
+    <style>
+      body { font-family: sans-serif; width: 260px; padding: 16px; }
+      h1 { font-size: 16px; margin: 0 0 8px; }
+      button { width: 100%; padding: 8px; margin-top: 8px; }
+      ul { max-height: 160px; overflow-y: auto; padding-left: 18px; }
+      li { font-size: 12px; margin-bottom: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>A.O.A.I Guardian</h1>
+    <label>
+      <input type="checkbox" id="consentToggle" /> Allow media access
+    </label>
+    <button id="clearLogs">Clear log</button>
+    <h2 style="font-size:14px;margin-top:12px;">Recent Events</h2>
+    <ul id="events"></ul>
+    <script src="popup.js"></script>
+  </body>
+</html>

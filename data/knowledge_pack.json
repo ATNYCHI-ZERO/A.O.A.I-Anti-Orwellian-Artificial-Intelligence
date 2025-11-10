@@ -1,0 +1,20 @@
+[
+  {
+    "id": "privacy_act_1974",
+    "title": "Privacy Act of 1974",
+    "url": "https://www.justice.gov/opcl/privacy-act-1974",
+    "summary": "U.S. federal law governing the collection, maintenance, use, and dissemination of personal information by federal agencies."
+  },
+  {
+    "id": "gdpr_article_5",
+    "title": "GDPR Article 5",
+    "url": "https://gdpr-info.eu/art-5-gdpr/",
+    "summary": "Principles relating to processing of personal data including lawfulness, fairness, transparency, data minimization, and integrity."
+  },
+  {
+    "id": "cisa_reporting_guidance",
+    "title": "CISA Reporting Guidance",
+    "url": "https://www.cisa.gov/incident-reporting",
+    "summary": "Guidelines for reporting cybersecurity incidents to the Cybersecurity and Infrastructure Security Agency."
+  }
+]

@@ -1,0 +1,22 @@
+lsa:
+  poll_interval: 2.0
+  watch_permissions:
+    - camera
+    - microphone
+    - biometric
+  allowed_processes:
+    - "WebcamApp.exe"
+    - "Zoom"
+    - "Teams"
+truth_engine:
+  knowledge_base: data/knowledge_pack.json
+  max_references: 5
+  kmath_epsilon: 1e-6
+media_shield:
+  enable: true
+  motion_threshold: 1000000
+  red_threshold: 0.02
+  blur_kernel: 51
+telemetry:
+  enabled: false
+  endpoint: null

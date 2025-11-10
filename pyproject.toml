@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aoai-defender"
+version = "1.0.0rc1"
+description = "Constitutional defensive AI stack for user sovereignty"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "A.O.A.I Collective" }]
+dependencies = [
+  "psutil>=5.9",
+  "typer>=0.9",
+  "rich>=13.0",
+  "pydantic>=2.5",
+  "pyyaml>=6.0",
+  "numpy>=1.26",
+  "opencv-python>=4.8",
+]
+
+[project.optional-dependencies]
+cli = ["typer[all]>=0.9", "rich>=13.0"]
+
+[project.urls]
+Homepage = "https://aoai.example.org"
+Source = "https://github.com/aoai/aoai-defender"
+
+[tool.setuptools.packages.find]
+where = ["src"]
